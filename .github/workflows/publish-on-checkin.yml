@@ -21,8 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm run
-    - run: npm publish
+    - run: npm run publish
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
